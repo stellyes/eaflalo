@@ -1,0 +1,15 @@
+:root  {
+    --MENDL-DAWN: "mendl-serif-dawn", sans-serif;
+    --MENDL-DUSK: "mendl-serif-dusk", sans-serif;
+}
+
+@font-face {
+    font-family: 'Motorola';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Motorola'), url('./assets/motorola.woff') format('woff');
+}
+
+.header {
+    font-family: 'Motorola';
+}
