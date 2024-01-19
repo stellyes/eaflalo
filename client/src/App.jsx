@@ -1,17 +1,37 @@
-import { Outlet } from 'react-router-dom';
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import { useLocation, Outlet } from 'react-router-dom';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 import Header from './components/Header';
+import Footer from './components/Footer';
+import bg1 from './assets/images/bg1.png';
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
 const App = () => {
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+
+  window.addEventListener('load', () => {
+    document.querySelector("#bg").setAttribute("style", `background-image: url(${bg1})`);
+  });
+
   return (
     <ApolloProvider client={client}>
-        <Header />
-        <Outlet />
+        {isHome ? 
+        <Container>
+          <Outlet />
+          <Footer />
+        </Container> :
+          <Container>
+            <Header />
+            <Outlet />
+            <Footer />
+          </Container>
+        }
     </ApolloProvider>
   );
 };

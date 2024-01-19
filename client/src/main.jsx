@@ -4,6 +4,9 @@ import App from './App.jsx';
 import './index.css';
 
 import Home from './pages/Home.jsx';
+import Blog from './pages/Blog.jsx';
+import Portfolio from './pages/Portfolio.jsx';
+import About from './pages/About.jsx';
 
 const router = createBrowserRouter([
   {
@@ -13,8 +16,20 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home/>
-      }
+        element: <Home />
+      },
+      {
+        path: "/blog",
+        element: <Blog/>
+      },
+      {
+        path: "/portfolio",
+        element: <Portfolio/>
+      },
+      {
+        path: "/about",
+        element: <About/>
+      },
     ]
   }
 ]);
