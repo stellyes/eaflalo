@@ -15,11 +15,12 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100lvw;
+    height: 100lvh;
     background-position: center;
     background-size: cover;
     filter: brightness(0.8);
+    transition: background-image 0.5s ease;
 }
 
 .home,
@@ -33,7 +34,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100lvh;
+    height: 95vh;
 }
 
 .logo-text {
@@ -59,7 +60,7 @@
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     color: #FFF;
@@ -78,3 +79,12 @@
     letter-spacing: 0.1em;
 }
 
+@media screen and (max-width: 768px) {
+    .logo-text {
+        font-size: 2.3rem;
+    }
+
+    .nav-links {
+        font-size: 1.2rem;
+    }
+}

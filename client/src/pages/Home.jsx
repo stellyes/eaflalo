@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
     return(
-       <Container className="home text-center">
+       <Container className="home text-center mx-3">
             <Container className="logo-text mb-3">
                 <Link to="/">ELISHA AFLALO</Link>
             </Container>
