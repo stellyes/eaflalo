@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "url": "example-blog-post",
+    "title": "Example Blog Post",
+    "date": "January 24th, 2024",
+    "preview": "This is a preview of the blog post",
+    "content": "# This is the content of the blog post\n\n## This is a subheading\n\n ### This is some more content"
+  }
+]
