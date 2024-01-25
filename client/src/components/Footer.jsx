@@ -6,8 +6,8 @@ import { GrLinkedin } from "react-icons/gr";
 import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
-    return(
-        <Container className="footer d-flex justify-content-center align-items-center py-5">
+    return (
+        <Container className="footer my-5 text-center">
             <MdOutlineEmail className='mx-5' />
             <GrLinkedin className='mx-5' />
             <FaInstagram className='mx-5' />

@@ -4,8 +4,8 @@ import Container from 'react-bootstrap/Container'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
-    return(
-       <Container className="home text-center mx-3">
+    return (
+        <Container className="home text-center mx-auto">
             <Container className="logo-text mb-3">
                 <Link to="/">ELISHA AFLALO</Link>
             </Container>
