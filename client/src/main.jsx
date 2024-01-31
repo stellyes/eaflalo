@@ -8,6 +8,8 @@ import Blog from './pages/Blog.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import About from './pages/About.jsx';
 
+import BlogPost from './pages/blog/BlogPost.jsx';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,15 +22,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/blog",
-        element: <Blog/>
+        element: <Blog />
+      },
+      {
+        path: "/blog/:slug",
+        element: <BlogPost />
       },
       {
         path: "/portfolio",
-        element: <Portfolio/>
+        element: <Portfolio />
       },
       {
         path: "/about",
-        element: <About/>
+        element: <About />
       },
     ]
   }

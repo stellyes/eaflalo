@@ -8,9 +8,9 @@ import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
     return (
         <Container className="footer my-5 text-center">
-            <MdOutlineEmail className='mx-5' />
-            <GrLinkedin className='mx-5' />
-            <FaInstagram className='mx-5' />
+            <MdOutlineEmail className='mx-4' />
+            <GrLinkedin className='mx-4' />
+            <FaInstagram className='mx-4' />
         </Container>
     );
 };
