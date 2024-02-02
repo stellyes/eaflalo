@@ -1,7 +1,11 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container'
 
+import bg3 from '../assets/images/bg3.png';
+
 const About = () => {
+    document.querySelector("#bg").setAttribute("style", `background-image: url(${bg3})`);
+
     return (
         <Container className="about">
             <Container className="about-title my-4">

@@ -9,6 +9,7 @@ import Portfolio from './pages/Portfolio.jsx';
 import About from './pages/About.jsx';
 
 import BlogPost from './pages/blog/BlogPost.jsx';
+import TooLucky from './pages/TooLucky.jsx'
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
         path: "/about",
         element: <About />
       },
+      {
+        // This is going to be a hidden link on the about page, or somewhere
+        path: "/toolucky",
+        element: <TooLucky />
+      }
     ]
   }
 ]);

@@ -3,9 +3,11 @@ import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
 
 import posts from '../assets/documents/blogposts.json';
-
+import bg1 from '../assets/images/bg1.png';
 
 const Blog = () => {
+    document.querySelector("#bg").setAttribute("style", `background-image: url(${bg1})`);
+
     return (
         <Container className="blog mt-4">
             {posts.length !== 0 ?

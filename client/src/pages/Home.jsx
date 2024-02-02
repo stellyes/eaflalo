@@ -3,7 +3,11 @@ import Container from 'react-bootstrap/Container'
 
 import { Link } from 'react-router-dom'
 
+import bg1 from '../assets/images/bg1.png';
+
 const Home = () => {
+    document.querySelector("#bg").setAttribute("style", `background-image: url(${bg1})`);
+
     return (
         <Container className="home text-center mx-auto">
             <Container className="logo-text mb-3">
