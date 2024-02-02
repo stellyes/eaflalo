@@ -175,15 +175,25 @@ svg {
   font-weight: 400;
 }
 
-.print *,
-.writing *,
-.video * {
+.print,
+.writing,
+.video {
   font-size: smaller;
   background: none;
   border: none;
   color: #fff;
-  max-height: 1rem;
+}
+
+.print .container,
+.writing .container,
+.video .container {
   transition: text-shadow 0.2s ease;
+}
+
+.print .container:hover,
+.writing .container:hover,
+.video .container:hover {
+  text-shadow: 0px 0px 10px #fff;
 }
 
 @media screen and (max-width: 991px) {

@@ -23,6 +23,14 @@ import ia7 from '../assets/images/ia7.jpg'
 import ia8 from '../assets/images/ia8.jpg'
 import ia9 from '../assets/images/ia9.jpg'
 
+import oa41 from '../assets/images/oa41.jpeg'
+import oa42 from '../assets/images/oa42.jpeg'
+import oa43 from '../assets/images/oa43.jpeg'
+import oa44 from '../assets/images/oa44.jpeg'
+import oa45 from '../assets/images/oa45.jpeg'
+import oa46 from '../assets/images/oa46.jpeg'
+import oa47 from '../assets/images/oa47.jpeg'
+
 const Portfolio = () => {
     document.querySelector("#bg").setAttribute("style", `background-image: url(${bg2})`);
 
@@ -52,6 +60,20 @@ const Portfolio = () => {
                         <Image src={ia9}></Image>
                     </React.Fragment>
                 );
+            case "all_fours":
+                return (
+                    <React.Fragment>
+                        <p>[TO THE VIEWER]</p>
+                        <p style={{ textAlign: "justify" }}>THE PURPOSE IS, AT ONCE, TO REMAIN COMPLETELY UNSEEN & DELIVER DEVINE PLEASURE [ ]. TO BE BOTH BLINDINGLY BEAUTIFUL & DISTURBING. TO LINGER LIKE A SWEETNESS IN THE MOUTH THAT IS BEGINNING TO ROT. TO CREATE SOMETHING LIVING FROM THE CARCASSES OF MOTHERS AND GIRLS REDUCED TO MEAT. TO SUMMON A SACRED SPACE AND INVADE IT. TO PAD THE WALLS OF YOUR FANTASIES WITH THICK-CUT SLABS OF FLESH, INDUCING HUNGER & AROUSAL. TO DISTURB SATISFACTION BEFORE IT IS WHOLLY EXPERIENCED. ARE YOU WILLING TO SURRENDER YOUR BODY TO TOTAL PLEASURE? ARE YOU WILLING TO SACRIFICE YOUR BODY TO TOTAL PLEASURE?</p>
+                        <Image src={oa41}></Image>
+                        <Image src={oa42}></Image>
+                        <Image src={oa43}></Image>
+                        <Image src={oa44}></Image>
+                        <Image src={oa45}></Image>
+                        <Image src={oa46}></Image>
+                        <Image src={oa47}></Image>
+                    </React.Fragment>
+                )
             default:
                 return (<></>);
 
@@ -59,27 +81,26 @@ const Portfolio = () => {
     };
 
     return (
-        <Container className="portfolio">
+        <Container className="portfolio p-0 m-0">
             <Row>
-                <Col xl={2} xs={12} className='portfolio-menu'>
-                    <Row className='print my-3'>
-                        <h3 className='mt-3'>PRINTS</h3>
+                <Col xs={3} className='portfolio-menu'>
+                    <Row className='print my-4'>
+                        <h3 className='my-3'>PRINTS</h3>
                         <Container onClick={() => setPfEntry("two_poems")}>
                             TWO POEMS
                         </Container>
                     </Row>
-                    <Row className='writing my-3'>
-                        <h3>WRITING</h3>
+                    <Row className='writing my-4'>
+                        <h3 className='my-3'>WRITING</h3>
                     </Row>
-                    <Row className='video my-3'>
-                        <h3>PHOTO/VIDEO</h3>
-                        <ListGroupItem
-                            as='li'
-                            className='my-0'
-                            onClick={() => setPfEntry("inside_animal")}
-                        >
+                    <Row className='video my-4'>
+                        <h3 className='my-3'>PHOTO/VIDEO</h3>
+                        <Container onClick={() => setPfEntry("inside_animal")} >
                             INSIDE ANIMAL
-                        </ListGroupItem>
+                        </Container>
+                        <Container onClick={() => setPfEntry("all_fours")} >
+                            ON ALL FOURS, I'M PREY FOR YOU
+                        </Container>
                     </Row>
                 </Col>
                 <Col md={8} sm={12} className='portfolio-display'>
