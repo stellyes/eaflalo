@@ -43,7 +43,7 @@ const Portfolio = () => {
                     <React.Fragment>
                         <Image src={tp1}></Image>
                         <Image src={tp2}></Image>
-                        <Image src={tp3} style={{ rotate: "-90deg", scale: "1.3" }}></Image>
+                        <Image src={tp3} className="landscape-image"></Image>
                     </React.Fragment>
                 );
             case "inside_animal":
@@ -83,18 +83,18 @@ const Portfolio = () => {
     return (
         <Container className="portfolio p-0 m-0">
             <Row>
-                <Col xs={3} className='portfolio-menu'>
+                <Col lg={3} md sm xs={12} className='portfolio-menu'>
                     <Row className='print my-4'>
-                        <h3 className='my-3'>PRINTS</h3>
+                        <h3 className='my-3 portfolio-section-title'>PRINTS</h3>
                         <Container onClick={() => setPfEntry("two_poems")}>
                             TWO POEMS
                         </Container>
                     </Row>
                     <Row className='writing my-4'>
-                        <h3 className='my-3'>WRITING</h3>
+                        <h3 className='my-3 portfolio-section-title'>WRITING</h3>
                     </Row>
                     <Row className='video my-4'>
-                        <h3 className='my-3'>PHOTO/VIDEO</h3>
+                        <h3 className='my-3 portfolio-section-title'>PHOTO/VIDEO</h3>
                         <Container onClick={() => setPfEntry("inside_animal")} >
                             INSIDE ANIMAL
                         </Container>
