@@ -86,20 +86,23 @@ const Portfolio = () => {
                 <Col lg={3} md sm xs={12} className='portfolio-menu'>
                     <Row className='print my-4'>
                         <h3 className='my-3 portfolio-section-title'>PRINTS</h3>
+                        <Container onClick={() => setPfEntry("all_fours")} >
+                            ON ALL FOURS, I'M PREY FOR YOU
+                        </Container>
                         <Container onClick={() => setPfEntry("two_poems")}>
                             TWO POEMS
                         </Container>
                     </Row>
                     <Row className='writing my-4'>
                         <h3 className='my-3 portfolio-section-title'>WRITING</h3>
+                        <Container onClick={() => setPfEntry("two_poems")}>
+                            TWO POEMS
+                        </Container>
                     </Row>
                     <Row className='video my-4'>
                         <h3 className='my-3 portfolio-section-title'>PHOTO/VIDEO</h3>
                         <Container onClick={() => setPfEntry("inside_animal")} >
                             INSIDE ANIMAL
-                        </Container>
-                        <Container onClick={() => setPfEntry("all_fours")} >
-                            ON ALL FOURS, I'M PREY FOR YOU
                         </Container>
                     </Row>
                 </Col>

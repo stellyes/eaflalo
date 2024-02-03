@@ -103,7 +103,7 @@ svg:hover {
   font-weight: 400;
   text-align: right;
   right: 0;
-  width: 70%;
+  width: 60%;
 }
 
 .about-subheader {
@@ -114,6 +114,12 @@ svg:hover {
   width: 70%;
 }
 
+.about-subheader a {
+  color: #fff;
+  transition: text-shadow 0.2s ease;
+}
+
+.about-subheader a,
 .blog-post-link {
   text-decoration: none;
 }
@@ -146,8 +152,9 @@ svg:hover {
   transition: text-shadow 0.2s ease;
 }
 
+.about-subheader a:hover,
 .blog-post a:hover {
-  text-shadow: 1px 1px 5px #fff;
+  text-shadow: 1px 1px 8px #fff;
 }
 
 .blog-post p img,
