@@ -12,11 +12,14 @@ const Footer = () => {
     };
 
     return (
-        <Container className="footer my-5 text-center">
-            <MdOutlineEmail className='mx-4' onClick={() => handleRedirect("mailto:elisha.a808@gmail.com")} />
-            <GrLinkedin className='mx-4' onClick={() => handleRedirect("https://www.linkedin.com/in/elisha-aflalo-776806177/")} />
-            <FaInstagram className='mx-4' onClick={() => handleRedirect("https://instagram.com/t0olucky")} />
-        </Container>
+        <React.Fragment>
+            <Container className="footer mt-5 text-center">
+                <MdOutlineEmail className='mx-4' onClick={() => handleRedirect("mailto:elisha.a808@gmail.com")} />
+                <GrLinkedin className='mx-4' onClick={() => handleRedirect("https://www.linkedin.com/in/elisha-aflalo-776806177/")} />
+                <FaInstagram className='mx-4' onClick={() => handleRedirect("https://instagram.com/t0olucky")} />
+            </Container>
+            <p className='my-3 credits footer text-center'>Website by <a href="https://ryanengland.onrender.com">Ryan England</a></p>
+        </React.Fragment>
     );
 };
 

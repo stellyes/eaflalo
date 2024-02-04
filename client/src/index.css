@@ -147,14 +147,25 @@ svg:hover {
   margin: 0.5em;
 }
 
+.credits {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.credits a {
+  text-decoration: none;
+}
+
+.credits a,
 .blog-post a {
   color: #fff;
   transition: text-shadow 0.2s ease;
 }
 
+.credits a:hover,
 .about-subheader a:hover,
 .blog-post a:hover {
-  text-shadow: 1px 1px 8px #fff;
+  text-shadow: 1px 1px 6px #fff;
 }
 
 .blog-post p img,
