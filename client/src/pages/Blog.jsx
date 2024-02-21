@@ -3,10 +3,10 @@ import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
 
 import posts from '../assets/documents/blogposts.json';
-import bg1 from '../assets/images/bg1.png';
+import bg4 from '../assets/images/bg4.jpg';
 
 const Blog = () => {
-    document.querySelector("#bg").setAttribute("style", `background-image: url(${bg1})`);
+    document.querySelector("#bg").setAttribute("style", `background-image: url(${bg4})`);
 
     return (
         <Container className="blog mt-4">

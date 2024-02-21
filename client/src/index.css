@@ -51,6 +51,7 @@ svg:hover {
   letter-spacing: 0.2em;
 }
 
+.license-text a,
 .nav-links a,
 .logo-text a {
   text-decoration: none;
@@ -63,6 +64,7 @@ svg:hover {
   letter-spacing: 0.1em;
 }
 
+.license-text a:hover,
 .portfolio-menu li:hover,
 .logo-text a:hover,
 .nav-links a:hover {
@@ -83,6 +85,8 @@ svg:hover {
   scale: 1.5;
 }
 
+.license-title,
+.license-text,
 .portfolio,
 .about,
 .blog {

@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx';
 import Blog from './pages/Blog.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import About from './pages/About.jsx';
+import License from './pages/License.jsx';
 
 import BlogPost from './pages/blog/BlogPost.jsx';
 import TooLucky from './pages/TooLucky.jsx'
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
         // This is going to be a hidden link on the about page, or somewhere
         path: "/toolucky",
         element: <TooLucky />
+      },
+      {
+        path: "/license",
+        element: <License />
       }
     ]
   }
